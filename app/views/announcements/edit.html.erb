@@ -1,0 +1,12 @@
+<h2><%=l(:label_edit)%></h2>
+
+<% form_tag "/announcements/edit" do %>
+  <div class="box asset_form">
+    <p>
+      <%= text_area_tag :announcement_content, $ANNOUNCEMENT, :cols => 60, :rows => 10, :class => 'wiki-edit', :id => "announcement_content" %>
+      <%= wikitoolbar_for 'announcement_content' %>
+    </p>
+    <%= submit_tag l(:button_save), :id => "submit_btn" %>
+  </div>
+  
+<% end %>

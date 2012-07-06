@@ -1,0 +1,8 @@
+<h2><%=l(:label_edit)%></h2>
+
+<div class="box asset_form">
+  <div>
+    <%= textilizable($ANNOUNCEMENT) %>
+  </div>
+  <%= link_to l(:button_edit), {:controller => 'announcements', :action => 'edit'} %>
+</div>
